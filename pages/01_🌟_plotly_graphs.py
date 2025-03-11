@@ -61,7 +61,7 @@ with col1:
         df_data = pd.read_csv(uploaded_file)
 
     if df_data is not None:
-        st.dataframe(df_data, height=800)
+        st.dataframe(df_data, height=640)
 
 if df_data is not None and plot_config["params"]:
     params = {
