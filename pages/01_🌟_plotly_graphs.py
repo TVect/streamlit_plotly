@@ -34,8 +34,9 @@ plot_config = {"option": "Pie Charts", "params": {}}
 col1, col2 = st.columns([0.7, 0.3], gap="medium", border=True)
 
 with col2:
-    # uploaded_file = st.file_uploader("Choose a file")
-    uploaded_file = st.file_uploader("")
+    uploaded_file = st.file_uploader(
+        "Choose a file", 
+        label_visibility="collapsed")    # visible | hidden | collapsed
     option = st.selectbox(
         "Choose a chart type ...",
         ("Pie Charts", "Scatter Plots", "..."),

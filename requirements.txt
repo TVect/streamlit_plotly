@@ -1,5 +1,5 @@
 streamlit==1.43.0
 streamlit-pydantic==0.6.0
-plotly==5.9.0
+pydantic==1.10.9
+plotly==6.0.0
 pandas==2.2.3
-numpy==1.26.0
