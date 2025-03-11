@@ -28,10 +28,10 @@ class ScatterPlotsConfig(BaseModel):
 
 
 df_data = None
-# df = px.data.tips()
+df_data = px.data.tips()
 plot_config = {"option": "Pie Charts", "params": {}}
 
-col1, col2 = st.columns([0.7, 0.3], gap="medium", border=True)
+col1, col2 = st.columns([0.7, 0.3], gap="small", border=True)
 
 with col2:
     uploaded_file = st.file_uploader(
@@ -61,7 +61,7 @@ with col1:
         df_data = pd.read_csv(uploaded_file)
 
     if df_data is not None:
-        st.dataframe(df_data, height=640)
+        st.dataframe(df_data, height=800)
 
 if df_data is not None and plot_config["params"]:
     params = {
